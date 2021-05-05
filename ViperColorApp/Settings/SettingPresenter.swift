@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 protocol SettingPresenterDelegate {
     var router: SettingRouterDelegate? { get set }
     var view: SettingViewDelegate? { get set }
     
     func connectToLabel(text: String)
+    func backButton()
 }
 
 class SettingPresenter: SettingPresenterDelegate {
@@ -20,5 +22,9 @@ class SettingPresenter: SettingPresenterDelegate {
     
     func connectToLabel(text: String) {
         view?.updateLabel(text: text)
+    }
+    
+    func backButton() {
+        router?.dismiss(viewController: view as? UIViewController)
     }
 }

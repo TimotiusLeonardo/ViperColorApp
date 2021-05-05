@@ -14,6 +14,7 @@ protocol SettingRouterDelegate {
     var entry: SettingEntryPoint? { get }
     
     static func start() -> SettingRouter
+    func dismiss(viewController: UIViewController?)
 }
 
 class SettingRouter: SettingRouterDelegate {
@@ -32,6 +33,10 @@ class SettingRouter: SettingRouterDelegate {
         router.entry = view as SettingEntryPoint
         
         return router
+    }
+    
+    func dismiss(viewController: UIViewController?) {
+        viewController?.dismiss(animated: true, completion: nil)
     }
     
     var entry: SettingEntryPoint?

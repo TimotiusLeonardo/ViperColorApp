@@ -38,5 +38,9 @@ class SettingViewController: UIViewController, SettingViewDelegate {
     @IBAction func switchPressed(_ sender: UISwitch) {
         presenter?.connectToLabel(text: "Touched")
     }
-
+    
+    @IBAction func backButton(_ sender: Any) {
+        presenter?.backButton()
+    }
+    
 }
