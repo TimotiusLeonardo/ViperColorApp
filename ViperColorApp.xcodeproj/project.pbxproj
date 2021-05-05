@@ -15,6 +15,14 @@
 		1E5BA46926414FBE00AEB8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA46726414FBE00AEB8CF /* LaunchScreen.storyboard */; };
 		1E5BA47426414FBE00AEB8CF /* ViperColorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA47326414FBE00AEB8CF /* ViperColorAppTests.swift */; };
 		1E5BA47F26414FBE00AEB8CF /* ViperColorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA47E26414FBE00AEB8CF /* ViperColorAppUITests.swift */; };
+		1E5BA49026414FEE00AEB8CF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA48F26414FEE00AEB8CF /* HomePresenter.swift */; };
+		1E5BA49226414FFA00AEB8CF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA49126414FFA00AEB8CF /* HomeRouter.swift */; };
+		1E5BA495264150F000AEB8CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA493264150F000AEB8CF /* HomeViewController.swift */; };
+		1E5BA496264150F000AEB8CF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA494264150F000AEB8CF /* HomeViewController.xib */; };
+		1E5BA49A264192A700AEB8CF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA498264192A700AEB8CF /* SettingViewController.swift */; };
+		1E5BA49B264192A700AEB8CF /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BA499264192A700AEB8CF /* SettingViewController.xib */; };
+		1E5BA49D264192B900AEB8CF /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA49C264192B900AEB8CF /* SettingPresenter.swift */; };
+		1E5BA49F264192C900AEB8CF /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BA49E264192C900AEB8CF /* SettingRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		1E5BA47A26414FBE00AEB8CF /* ViperColorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperColorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5BA47E26414FBE00AEB8CF /* ViperColorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperColorAppUITests.swift; sourceTree = "<group>"; };
 		1E5BA48026414FBE00AEB8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5BA48F26414FEE00AEB8CF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1E5BA49126414FFA00AEB8CF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		1E5BA493264150F000AEB8CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1E5BA494264150F000AEB8CF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1E5BA498264192A700AEB8CF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1E5BA499264192A700AEB8CF /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		1E5BA49C264192B900AEB8CF /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		1E5BA49E264192C900AEB8CF /* SettingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,8 @@
 		1E5BA45B26414FBB00AEB8CF /* ViperColorApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BA4972641928D00AEB8CF /* Settings */,
+				1E5BA48C26414FCC00AEB8CF /* Home */,
 				1E5BA45C26414FBB00AEB8CF /* AppDelegate.swift */,
 				1E5BA45E26414FBB00AEB8CF /* SceneDelegate.swift */,
 				1E5BA46026414FBB00AEB8CF /* ViewController.swift */,
@@ -126,6 +144,28 @@
 				1E5BA48026414FBE00AEB8CF /* Info.plist */,
 			);
 			path = ViperColorAppUITests;
+			sourceTree = "<group>";
+		};
+		1E5BA48C26414FCC00AEB8CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BA48F26414FEE00AEB8CF /* HomePresenter.swift */,
+				1E5BA49126414FFA00AEB8CF /* HomeRouter.swift */,
+				1E5BA493264150F000AEB8CF /* HomeViewController.swift */,
+				1E5BA494264150F000AEB8CF /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1E5BA4972641928D00AEB8CF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1E5BA498264192A700AEB8CF /* SettingViewController.swift */,
+				1E5BA499264192A700AEB8CF /* SettingViewController.xib */,
+				1E5BA49C264192B900AEB8CF /* SettingPresenter.swift */,
+				1E5BA49E264192C900AEB8CF /* SettingRouter.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5BA46926414FBE00AEB8CF /* LaunchScreen.storyboard in Resources */,
+				1E5BA49B264192A700AEB8CF /* SettingViewController.xib in Resources */,
 				1E5BA46626414FBE00AEB8CF /* Assets.xcassets in Resources */,
 				1E5BA46426414FBB00AEB8CF /* Main.storyboard in Resources */,
+				1E5BA496264150F000AEB8CF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5BA49F264192C900AEB8CF /* SettingRouter.swift in Sources */,
 				1E5BA46126414FBB00AEB8CF /* ViewController.swift in Sources */,
+				1E5BA49226414FFA00AEB8CF /* HomeRouter.swift in Sources */,
 				1E5BA45D26414FBB00AEB8CF /* AppDelegate.swift in Sources */,
+				1E5BA49026414FEE00AEB8CF /* HomePresenter.swift in Sources */,
 				1E5BA45F26414FBB00AEB8CF /* SceneDelegate.swift in Sources */,
+				1E5BA49A264192A700AEB8CF /* SettingViewController.swift in Sources */,
+				1E5BA495264150F000AEB8CF /* HomeViewController.swift in Sources */,
+				1E5BA49D264192B900AEB8CF /* SettingPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
